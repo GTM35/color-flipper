@@ -1,6 +1,6 @@
 async function Options() {
   let dados = {};
-  let request = await fetch("/Assets/json/colors.json")
+  let request = await fetch("Assets/json/colors.json")
     .then((response) => {
       return response.json();
     })
