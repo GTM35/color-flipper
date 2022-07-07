@@ -1,35 +1,57 @@
-/* Pegando as infomações de cores */
-const request = fetch("/Assets/json/colors.json")
-  .then((req) => {
-    return req.json();
-  })
-  .then((req) => {
-    document.querySelector(".button").addEventListener("click", Options(req));
-  });
+async function Options() {
+  let dados = {};
+  let request = await fetch("/Assets/json/colors.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((r) => {
+      dados = r;
+    })
+    .catch(() => {
+      alert("Deu ruim");
+    });
 
-/* Adicionando evento ao botão */
-
-//Functions
-
-function Options(lista) {
   let elmRadio = document.getElementsByName("color-option");
+  elmRadio.forEach((elm) => {
+    /* Checando se o Radio está marcado */
+    if (elm.checked) {
+      /*Verificando qual o elemento está marcado  */
+      if (elm.getAttribute("data-color") == "random") {
+        /* Formando o número random */
+        let randomNumber = Math.floor(
+          Math.random() * Object.keys(dados).length
+        );
+        /* Pegando as informações da cor sorteada */
+        let colorObject = dados[randomNumber];
 
-  elmRadio.forEach((el) => {
-    if (el.checked) {
-      if (el.getAttribute("data-color") == "random") {
-        randomColor();
-      } else if (el.getAttribute("data-color") == "hex") {
-        hexColor();
+        /* Formando a string da cor sorteada */
+        let color = "";
+
+        /* Regra de string para cor HEX */
+        if (colorObject.Type == "HEX") {
+          color = `#${colorObject.Color}`;
+        }
+
+        /* Regra de string para RGB */
+        if (colorObject.Type == "RGB") {
+          color = `rgb(${colorObject.Color})`;
+        }
+
+        console.log(color);
+
+        /* Acrescentando a cor no background */
+        document.querySelector("main").style.backgroundColor = color;
+
+        /* Acrescentando a cor na tela */
+        document.querySelector(".color-area .text span").innerHTML = color
+          .replace(" ", "")
+          .toUpperCase();
+
+        /*  */
       } else {
-        alert("Selecione uma opção para gerar cores!");
       }
     }
   });
 }
 
-function randomColor() {
-  let randomNumber = Math.floor(Math.random() * lista.length);
-  console.log("random");
-}
-
-function hexColor() {}
+document.querySelector("#button").addEventListener("click", Options);

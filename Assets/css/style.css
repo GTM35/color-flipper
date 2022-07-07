@@ -51,7 +51,7 @@ main {
   margin-bottom: 15px;
 }
 
-.button {
+#button {
   background-color: transparent;
   border-color: black;
   border-radius: 5px;
@@ -63,7 +63,7 @@ main {
   width: 100px;
 }
 
-.button:hover {
+#button:hover {
   transform: scale(1.2);
 }
 
@@ -76,4 +76,12 @@ main {
 
 .container-option1 {
   margin-right: 20px;
+}
+
+.container-option1,
+.container-option2 {
+  background-color: #1f1e1e;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
 }
