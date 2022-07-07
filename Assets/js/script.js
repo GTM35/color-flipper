@@ -8,7 +8,7 @@ async function Options() {
       dados = r;
     })
     .catch((e) => {
-      alert("Ops.. Ocorreu um problema", e);
+      alert(e);
     });
 
   let elmRadio = document.getElementsByName("color-option");
