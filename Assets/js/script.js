@@ -8,7 +8,7 @@ async function Options() {
       dados = r;
     })
     .catch((e) => {
-      alert("Ops.. Ocorreu um problema",e);
+      alert("Ops.. Ocorreu um problema", e);
     });
 
   let elmRadio = document.getElementsByName("color-option");
@@ -55,3 +55,4 @@ async function Options() {
 }
 
 document.querySelector("#button").addEventListener("click", Options);
+/* document.querySelector("#button").addEventListener("touchend", Options); */
