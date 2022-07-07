@@ -47,7 +47,7 @@ async function Options() {
           .replace(" ", "")
           .toUpperCase();
 
-        /*  */
+        /* ADICIONAR COLOR NO TEXTO */
       } else {
       }
     }
