@@ -51,7 +51,7 @@ main {
   margin-bottom: 15px;
 }
 
-#button {
+.button {
   background-color: transparent;
   border-color: black;
   border-radius: 5px;
@@ -63,7 +63,7 @@ main {
   width: 100px;
 }
 
-#button:hover {
+button:hover {
   transform: scale(1.2);
 }
 
