@@ -54,4 +54,4 @@ async function Options() {
   });
 }
 
-document.querySelector(".button").addEventListener("touchend", Options);
+/* document.querySelector(".button").addEventListener("click", Options); */
