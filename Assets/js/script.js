@@ -52,5 +52,9 @@ async function Options() {
   });
 }
 
-document.querySelector(".button").addEventListener("click", Options);
-document.querySelector(".button").addEventListener("touchend", Options);
+document.querySelector(".button").addEventListener("click", () => {
+  console.log("Click");
+});
+document.querySelector(".button").addEventListener("touchstart", () => {
+  alert("Chegou até aqui");
+});
