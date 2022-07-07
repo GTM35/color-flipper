@@ -1,6 +1,6 @@
 async function Options() {
   let dados = {};
-  let request = await fetch("Assets/json/colors.json")
+  let request = await fetch("Assets/js/colors.json")
     .then((response) => {
       return response.json();
     })
@@ -37,8 +37,6 @@ async function Options() {
           color = `rgb(${colorObject.Color})`;
         }
 
-        console.log(color);
-
         /* Acrescentando a cor no background */
         document.querySelector("main").style.backgroundColor = color;
 
@@ -54,4 +52,4 @@ async function Options() {
   });
 }
 
-/* document.querySelector(".button").addEventListener("click", Options); */
+document.querySelector(".button").addEventListener("click", Options);
