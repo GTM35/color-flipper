@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Tyrian Purple",
+    "Type": "HEX",
+    "Color": "45062E"
+  },
+  {
+    "Name": "Bizâncio",
+    "Type": "HEX",
+    "Color": "7F055F"
+  },
+  {
+    "Name": "Máximo Amarelo",
+    "Type": "HEX",
+    "Color": "F6F930"
+  },
+  {
+    "Name": "Jato",
+    "Type": "HEX",
+    "Color": "2F2F2F"
+  },
+  {
+    "Name": "Ameixa",
+    "Type": "HEX",
+    "Color": "45062E"
+  },
+  {
+    "Name": "Azul Nevasca",
+    "Type": "RGB",
+    "Color": "152, 223, 234"
+  },
+  {
+    "Name": "Ardósia cinza",
+    "Type": "RGB",
+    "Color": "110, 126, 133"
+  },
+  {
+    "Name": "Opala",
+    "Type": "RGB",
+    "Color": "183, 206, 206"
+  },
+  {
+    "Name": "Crayola Dourado",
+    "Type": "RGB",
+    "Color": "243, 201, 139"
+  },
+  {
+    "Name": "Agridoce",
+    "Type": "RGB",
+    "Color": "245, 105, 96"
+  }
+]
