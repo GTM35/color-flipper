@@ -41,12 +41,48 @@ async function Options() {
         document.querySelector("main").style.backgroundColor = color;
 
         /* Acrescentando a cor na tela */
-        document.querySelector(".color-area .text span").innerHTML = color
-          .replace(" ", "")
-          .toUpperCase();
+        document.querySelector(".color-area .text span").innerHTML =
+          color.toUpperCase();
 
         /* ADICIONAR COLOR NO TEXTO */
+        document.querySelector(".text span").style.color = `${color}`;
       } else {
+        let hex = [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+        ];
+        let colorString = "";
+
+        for (let i = 0; i < 6; i++) {
+          let randomNumber = Math.floor(Math.random() * hex.length);
+          colorString += hex[randomNumber];
+        }
+
+        /* Acrescentando a cor no background */
+        document.querySelector(
+          "main"
+        ).style.backgroundColor = `#${colorString}`;
+
+        /* Acrescentando a cor na tela */
+        document.querySelector(
+          ".color-area .text span"
+        ).innerHTML = `#${colorString}`;
+
+        /* ADICIONAR COLOR NO TEXTO */
+        document.querySelector(".text span").style.color = `#${colorString}`;
       }
     }
   });
@@ -54,9 +90,7 @@ async function Options() {
 
 document.querySelector(".button").addEventListener("click", () => {
   Options();
-  alert("click");
 });
 document.querySelector(".button").addEventListener("touchstart", () => {
   Options();
-  alert("Touch");
 });
