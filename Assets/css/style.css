@@ -38,17 +38,21 @@ main {
   background-color: #1f1e1e;
   border-radius: 10px;
   color: white;
-  font-size: 30px;
+  display: flex;
+  font-size: 2rem;
   font-weight: bold;
   padding: 10px 20px;
 }
 
 .text span {
   color: #87bcde;
+  margin-left: 10px;
 }
 
 .color-area {
-  margin-bottom: 15px;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .button {
@@ -68,8 +72,8 @@ main {
 }
 
 .options {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-top: 15px;
 }
@@ -81,7 +85,50 @@ main {
 .container-option1,
 .container-option2 {
   background-color: #1f1e1e;
-  padding: 6px;
   border-radius: 5px;
   color: white;
+  padding: 6px;
+}
+
+/* Medias Query */
+
+@media (max-width: 425px) {
+  .text {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .text {
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+
+  .text span {
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text,
+  .options,
+  .button {
+    font-size: 1rem;
+  }
+
+  .text span {
+    margin-top: 3px;
+  }
+
+  .text {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .button:hover {
+    transform: none;
+  }
 }

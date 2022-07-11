@@ -46,6 +46,7 @@ async function Options() {
 
         /* ADICIONAR COLOR NO TEXTO */
         document.querySelector(".text span").style.color = `${color}`;
+        document.querySelector(".logo").style.color = `${color}`;
       } else {
         let hex = [
           "1",
@@ -83,6 +84,7 @@ async function Options() {
 
         /* ADICIONAR COLOR NO TEXTO */
         document.querySelector(".text span").style.color = `#${colorString}`;
+        document.querySelector(".logo").style.color = `#${colorString}`;
       }
     }
   });
