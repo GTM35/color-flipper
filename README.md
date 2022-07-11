@@ -17,14 +17,14 @@ O Projeto Color Flipper tem como principal função, gerar cores de fundo de man
 
 Para este projeto foi utilizado as seguintes tecnologias:
 
-* HTML5
-* CSS3
-* JavaScript.
+- HTML5
+- CSS3
+- JavaScript.
 
 Para verificar o projeto em produção, acesse este [link](https://gtm35.github.io/color-flipper/).
 
 Versão Desktop:
-IMAGEM
+![](Assets/img/desktop.png)
 
 Versão Mobile:
-IMAGEM
+![](Assets/img/mobile.jpeg)
