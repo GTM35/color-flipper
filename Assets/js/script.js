@@ -53,8 +53,10 @@ async function Options() {
 }
 
 document.querySelector(".button").addEventListener("click", () => {
-  console.log("Click");
+  Options();
+  alert("click");
 });
 document.querySelector(".button").addEventListener("touchstart", () => {
-  alert("Chegou até aqui");
+  Options();
+  alert("Touch");
 });
