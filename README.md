@@ -23,8 +23,8 @@ Para este projeto foi utilizado as seguintes tecnologias:
 
 Para verificar o projeto em produção, acesse este [link](https://gtm35.github.io/color-flipper/).
 
-Versão Desktop:
-![](Assets/img/desktop.png)
+### Versão Desktop:
+<img src="Assets/img/desktop.png"/>
 
-Versão Mobile:
-![](Assets/img/mobile.jpeg)
+### Versão Mobile:
+<img src="Assets/img/mobile.jpeg" height="800"/>
